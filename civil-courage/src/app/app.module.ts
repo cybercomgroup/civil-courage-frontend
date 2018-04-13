@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { LoginComponent } from './modules/login/login.component';
+import { ApiComponent } from './modules/api/api.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    ApiComponent
   ],
   imports: [
     BrowserModule,
