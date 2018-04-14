@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { LoginComponent } from './modules/login/login.component';
 import { ApiService } from './services/API/api.service';
+import { OngoingComponent } from './modules/ongoing/ongoing.component';
+import { ReceivedComponent } from './modules/received/received.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    OngoingComponent,
+    ReceivedComponent
   ],
   imports: [
     BrowserModule,

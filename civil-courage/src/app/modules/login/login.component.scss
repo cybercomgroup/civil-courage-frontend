@@ -34,3 +34,22 @@ div.well{
   height:30px;
   background-image:url('http://placehold.it/200x30/000000/ffffff/&text=BRAND+LOGO');
 }
+
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  /*whatever width you want*/
+}
