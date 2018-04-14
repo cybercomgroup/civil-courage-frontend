@@ -1,7 +1,7 @@
-<div class="container col-lg-6">
+<div class="container col-lg-10">
   <label class="col-form-label labal">Events</label>
-  <input type="text" class="form-control inputline" placeholder="Search Event" name="event" id="event" list="eventlist" (change)="getEventlist($event)">
-  <datalist id="eventlist" name="eventlist" (change)="getEventlist($event)">
+  <input type="text" class="form-control inputline" placeholder="Search Event" name="event" id="event" list="eventList">
+  <datalist id="eventList" name="eventList" >
   </datalist>
 <table class="table table-striped">
   <thead>
@@ -11,34 +11,12 @@
     <th>Create <br />scenario</th>
   </thead>
   <tbody>
-
-  <!--
-  <tr>
-    <td>2018-04-14 08:24</td>
-    <td>Shooting</td>
-    <td>Södermalm</td>
-    <td><span class="glyphicon glyphicon-share-alt"></span></td>
-  </tr>
-  <tr>
-    <td>2018-04-14 08:18</td>
-    <td>Car accident</td>
-    <td>Alingsås</td>
-    <td><span class="glyphicon glyphicon-share-alt"></span></td>
-  </tr>
-  <tr>
-    <td>2018-04-14 08:01</td>
-    <td>Robbery</td>
-    <td>Eskilstuna</td>
-    <td><span class="glyphicon glyphicon-share-alt"></span></td>
-  </tr> -->
     <tr *ngFor="let event of eventList; let i = index">
-      <td>{{ i + 1}} </td>
-      <td>{{event[i][0]}}</td>
-      <td>{{event[i][1]}}</td>
-      <td>{{event[i][2]}}</td>
-      <td><span class="glyphicon glyphicon-share-alt"></span></td>
+      <td class="col-md-2">{{event.date}}</td>
+      <td class="col-md-4">{{event.description}}</td>
+      <td class="col-md-2">{{event.location}}</td>
+      <td class="col-md-1"><span class="glyphicon glyphicon-share-alt"></span></td>
     </tr>
-
   </tbody>
 </table>
 </div>

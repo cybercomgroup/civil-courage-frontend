@@ -14,20 +14,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit( ) {
     let api = new ApiService();
     this.eventList = api.getLatestEvents();
+    console.log(this.eventList);
   }
-  /*
-  getEventlist($event) {
-    let val = $event.target.value
-    this.api.getLatestEvents(val).subscribe(data => {this.getTabledata(data)},
-      error => {
-        console.log('Error occured On getEventlist');
-      });
-  }
-  getTabledata(data) {
-    if (data !== undefined || data !== null) {
-      alert(JSON.stringify(data));
-      this.eventList.push(data);
-    }
-  }*/
 
 }

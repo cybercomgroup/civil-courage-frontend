@@ -17,20 +17,18 @@ export class ApiService {
       url: "https://weyes9suzh.execute-api.eu-west-1.amazonaws.com/production/events",
       contentType: "application/json",
       success: function (data) {
-        debugger;
         for (var i = 0; i < data.length; i++) {
           let event = new Event;
+          console.log(data[i]);
           event.id = data[i].id;
-          event.date = data[i].dateTime;
+          event.date = data[i].date;
           event.description = data[i].name;
           event.type = data[i].type;
-          event.location = data[i].location_name;
+          event.location = data[i].place;
           event.url = data[i].url;
 
           eventList.push(event);
         }
-
-
       },
       error: function (data) {
       }
