@@ -33,6 +33,7 @@ export class ApiService {
       error: function (data) {
       }
     })
+    debugger;
     return eventList;
   }
 

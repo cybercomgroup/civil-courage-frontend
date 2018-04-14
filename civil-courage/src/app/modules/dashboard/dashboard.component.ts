@@ -12,7 +12,8 @@ export class DashboardComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit( ) {
+  ngOnInit() {
+    debugger;
     let api = new ApiService();
     this.eventList = api.getLatestEvents();
   }

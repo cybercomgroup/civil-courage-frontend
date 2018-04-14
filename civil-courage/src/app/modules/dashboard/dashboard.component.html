@@ -52,23 +52,16 @@
 <div class="container col-lg-10">
   <label class="col-form-label labal">Events</label>
   <input type="text" class="form-control inputline" placeholder="Search Event" name="event" id="event" list="eventList">
-<<<<<<< HEAD
-  <datalist id="eventList" name="eventList"></datalist>
-  <table class="table table-striped">
-    <thead>
-=======
   <datalist id="eventList" name="eventList" >
   </datalist>
 <table class="tab table-striped table-bordered">
   <thead>
   <tr>
->>>>>>> 792202868fedd269e21dcbdfa72c64ac92ad0931
     <th>Time</th>
     <th>Event</th>
     <th>Location</th>
     <th>Create <br />scenario</th>
-<<<<<<< HEAD
-    </thead>
+    </thead>  
     <tbody>
       <tr *ngFor="let event of eventList; let i = index">
         <td class="col-md-2">{{event.date}}</td>
@@ -80,17 +73,4 @@
       </tr>
     </tbody>
   </table>
-=======
-  </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let event of eventList; let i = index">
-      <td class="col-md-2">{{event.date}}</td>
-      <td class="col-md-4">{{event.description}}</td>
-      <td class="col-md-2">{{event.location}}</td>
-      <td class="col-md-1"><span class="glyphicon glyphicon-share-alt"></span></td>
-    </tr>
-  </tbody>
-</table>
->>>>>>> 792202868fedd269e21dcbdfa72c64ac92ad0931
 </div>
