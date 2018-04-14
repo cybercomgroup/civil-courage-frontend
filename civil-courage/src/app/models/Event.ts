@@ -9,4 +9,5 @@ export class Event {
   type: string;
   longitude: number;
   latitude: number;
+  picture: string;
 }

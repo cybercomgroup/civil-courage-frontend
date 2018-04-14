@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'app/services/API/api.service';
-import $ from 'jquery';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,14 +13,15 @@ export class DashboardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    debugger;
+    
     let api = new ApiService();
     this.eventList = api.getLatestEvents();
   }
 
   createScenarioDialogue(data) {
-    debugger;
-    $("#createScenarioInfo").title(data.text);
+    
+    $("#createScenarioTitle").text(data.description);
+    $("#createScenarioInfo").text(data.description);
   }
   
 }
