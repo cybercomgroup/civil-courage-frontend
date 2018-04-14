@@ -13,15 +13,12 @@ export class DashboardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
     let api = new ApiService();
     this.eventList = api.getLatestEvents();
   }
 
   createScenarioDialogue(data) {
-    
     $("#createScenarioTitle").text(data.description);
     $("#createScenarioInfo").text(data.description);
   }
-  
 }
