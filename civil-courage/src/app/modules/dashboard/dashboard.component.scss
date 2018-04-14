@@ -1,6 +1,5 @@
 /* Style the tab */
 .tab {
-  overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
@@ -34,4 +33,12 @@
   border-top: none;
 }
 
+<<<<<<< HEAD
+=======
+.container {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 500px;
+}
+>>>>>>> 792202868fedd269e21dcbdfa72c64ac92ad0931
 
