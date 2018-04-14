@@ -19,7 +19,6 @@ export class ApiService {
       success: function (data) {
         debugger;
         for (var i = 0; i < data.length; i++) {
-          debugger;
           let event = new Event;
           event.id = data[i].id;
           event.date = data[i].dateTime;
