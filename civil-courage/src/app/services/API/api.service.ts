@@ -20,7 +20,6 @@ export class ApiService {
         
         for (var i = 0; i < data.length; i++) {
           let event = new Event;
-          console.log(data[i]);
           event.id = data[i].id;
           event.date = data[i].date;
           event.description = data[i].name;
@@ -41,6 +40,7 @@ export class ApiService {
   }
 
   createScenario(data) {
+    debugger;
     $.ajax({
       type: "POST",
       url: "https://weyes9suzh.execute-api.eu-west-1.amazonaws.com/production/scenarios",
