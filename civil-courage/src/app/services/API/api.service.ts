@@ -17,7 +17,7 @@ export class ApiService {
       url: "https://weyes9suzh.execute-api.eu-west-1.amazonaws.com/production/events",
       contentType: "application/json",
       success: function (data) {
-        
+
         for (var i = 0; i < data.length; i++) {
           let event = new Event;
           event.id = data[i].id;
@@ -35,7 +35,6 @@ export class ApiService {
       error: function (data) {
       }
     })
-    
     return eventList;
   }
 
