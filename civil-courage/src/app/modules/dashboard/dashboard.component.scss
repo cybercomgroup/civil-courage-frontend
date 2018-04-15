@@ -15,5 +15,9 @@
 .container {
   overflow: scroll;
   overflow-x: hidden;
-  height: 500px;
+  height: 100%;
+}
+
+html {
+  height: 100%;
 }
